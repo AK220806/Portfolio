@@ -8,9 +8,10 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
 }
 
 require "db.php"; // MySQL DB connection
-require "PHPMailer/PHPMailer.php";
+require 'vendor/autoload.php';
+/*
 require "PHPMailer/SMTP.php";
-require "PHPMailer/Exception.php";
+require "PHPMailer/Exception.php";*/
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
