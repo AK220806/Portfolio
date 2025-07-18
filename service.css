@@ -1,0 +1,199 @@
+body{
+    background-color: #170027;
+}
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: borde-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     padding: 5px;
+     
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     z-index: 100;
+     display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #170027;
+            /*box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);*/
+            position: fixed;
+            /*left: 0px;
+            right:0px;
+            top: 0px;*/
+
+
+
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 50px;
+    transition: 3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #50c4f1;
+}
+
+
+.card,.card1,.card2,.card3,.card4,.card5 {
+ position: relative;
+  width: 250px;
+  height: 304px;
+  background-color: #000;
+  float: left;
+ 
+  padding: 12px;
+  gap: 72px;
+  margin-top: 90px;
+  margin-left: 41px;
+  margin-right: 135px;
+  
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.heading {
+  font-size: 32px;
+  text-align: left; /* fix for align-items: right */
+  font-weight: bold;
+  
+  color: white;
+  padding-bottom: 24px; 
+}
+
+
+.card::before,.card1::before,.card2::before,.card3::before,.card4::before,.card5::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 290px;
+  height: 384px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+.card::after,.card1::after,.card2::after,.card3::after,.card3::after,.card4::after,.card5::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+
+}
+
+
+
+
+
+.card p:not(.heading),.card1 p:not(.heading),.card2 p:not(.heading),.card3 p:not(.heading),.card4 p:not(.heading),.card5 p:not(.heading) {
+  line-height: 25px;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.card p:last-child,.card1 p:last-child,.card2 p:last-child,.card3 p:last-child,.card4 p:last-child,.card5 p:last-child {
+  color: #e81cff;
+  font-weight: 600;
+}
+
+.card:hover::after,.card1:hover::after,.card2:hover::after {
+  filter: blur(30px);
+}
+
+.card:hover::before,.card1:hover::before,.card2:hover::before,.card3:hover::before,.card4:hover::before,.card5:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+/*.card1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: relative;
+  width: 350px;
+  height: 484px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 70px 0px 0px 30px;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.card1::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 387px;
+  height: 560px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card1::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.heading1 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.card1 p:not(.heading) {
+  font-size: 14px;
+}
+
+.card1 p:last-child {
+  color: #e81cff;
+  font-weight: 600;
+}
+
+.card1:hover::after {
+  filter: blur(30px);
+}
+
+.card1:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+*/

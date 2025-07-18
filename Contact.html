@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="Contact.css" />
+  <script defer src="Contact.js"></script>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">R.A.Kumar</a>
+    <nav class="navbar">
+      <a href="Home.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="contact">
+    <form class="contact__form" action="backend/contact.php" method="POST">
+      <h1>Contact Me</h1>
+
+      <label>Name</label>
+      <input name="name" type="text" required />
+
+      <label>Email</label>
+      <input name="email" type="email" required />
+
+      <label>Comments</label>
+      <input name="comments" type="text" required/>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
